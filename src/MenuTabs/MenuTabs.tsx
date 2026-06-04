@@ -1,30 +1,31 @@
 import { Tabs } from 'antd';
+import Home from './Home';
 const onChange = (key: any) => {
     console.log(key);
 };
 const items = [
     {
         key: '1',
-        label: 'Home',
-        children: 'Content of Home',
+        label: <b>Home</b>,
+        children: <Home />,
     },
     {
         key: '2',
-        label: 'About',
+        label: <b>About</b>,
         children: 'Content of About',
     },
     {
         key: '3',
-        label: 'Projects',
+        label: <b>Projects</b>,
         children: 'Content of Projects',
     },
     {
         key: '4',
-        label: 'Articles',
+        label: <b>Articles</b>,
         children: 'Content of Articles',
     },
 ];
 
 const MenuTabs = () =>
-    <Tabs className="w-full border-2" defaultActiveKey="1" items={items} onChange={onChange} />;
+    <Tabs className="w-full" defaultActiveKey="1" items={items} onChange={onChange} />;
 export default MenuTabs;
