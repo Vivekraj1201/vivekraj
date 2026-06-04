@@ -1,5 +1,4 @@
-import { Col, Row } from "antd";
-
+import { Button, Col, Row } from "antd";
 const Home = () => {
     return <Col className="w-full h-screen flex items-center justify-center overflow-hidden">
         <Row className={'w-full'}>
@@ -18,6 +17,10 @@ const Home = () => {
                     into innovative web applications. Explore my lateset projects and articles,
                     showcasing my expertise in React js and web development.
                 </p>
+                <Row className={"w-full mt-4 px-10 gap-4"}>
+                    <Button style={{ backgroundColor: "black", color: "white" }}>Resume</Button>
+                    <Button className={'border-0'}>Contact Me</Button>
+                </Row>
             </Col>
         </Row >
     </Col >
