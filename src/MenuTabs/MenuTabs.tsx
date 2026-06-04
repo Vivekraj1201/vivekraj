@@ -1,31 +1,26 @@
-import { Tabs } from 'antd';
+import { Col, Tabs } from 'antd';
 import Home from './Home';
+import SocialContact from './SocialContact';
+
 const onChange = (key: any) => {
     console.log(key);
 };
-const items = [
-    {
-        key: '1',
-        label: <b>Home</b>,
-        children: <Home />,
-    },
-    {
-        key: '2',
-        label: <b>About</b>,
-        children: 'Content of About',
-    },
-    {
-        key: '3',
-        label: <b>Projects</b>,
-        children: 'Content of Projects',
-    },
-    {
-        key: '4',
-        label: <b>Articles</b>,
-        children: 'Content of Articles',
-    },
-];
 
-const MenuTabs = () =>
-    <Tabs className="w-full" defaultActiveKey="1" items={items} onChange={onChange} />;
+const MenuTabs = () => {
+    const items = [
+        { key: "1", label: <b>Home</b>, children: <Home /> },
+        { key: "2", label: <b>Projects</b>, children: 'project' },
+        { key: "3", label: <b>Contact</b>, children: 'contact' },
+        { key: "4", label: <b>About</b>, children: 'about' },
+
+    ];
+
+    return (
+        <Col style={{ position: "relative", paddingRight: "150px" }}>
+            <Tabs items={items} />
+            <SocialContact />
+        </Col>
+    );
+};
+
 export default MenuTabs;
