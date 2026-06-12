@@ -2,10 +2,6 @@ import { Col, Tabs } from 'antd';
 import Home from './Home';
 import SocialContact from './SocialContact';
 
-const onChange = (key: any) => {
-    console.log(key);
-};
-
 const MenuTabs = () => {
     const items = [
         { key: "1", label: <b>Home</b>, children: <Home /> },
