@@ -1,4 +1,5 @@
 import { Button, Col, Row } from "antd";
+import ThemeSelect from "../ThemeSelect/ThemeSelect";
 const Home = () => {
     return <Col className="w-full h-screen flex items-center justify-center overflow-hidden">
         <Row className={'w-full'}>
@@ -20,6 +21,9 @@ const Home = () => {
                 <Row className={"w-full mt-4 px-10 gap-4"}>
                     <Button style={{ backgroundColor: "black", color: "white" }}>Resume</Button>
                     <Button className={'border-0'}>Contact Me</Button>
+                </Row>
+                <Row>
+                    <ThemeSelect />
                 </Row>
             </Col>
         </Row >
