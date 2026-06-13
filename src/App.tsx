@@ -5,17 +5,14 @@ import { useTheme } from "./ThemeSelect/ThemeContext";
 const { darkAlgorithm, defaultAlgorithm } = theme;
 
 const App = () => {
-  const { darkMode, toggleTheme } = useTheme();
+  const { darkMode } = useTheme();
 
   return (
     <ConfigProvider
       theme={{ algorithm: darkMode ? darkAlgorithm : defaultAlgorithm }}
     >
-      <Col style={{ background: darkMode ? "#0000" : "#faf7f7" }}>
+      <Col style={{ background: darkMode ? "rgba(0, 0, 0, 1)" : "rgba(255, 255, 255, 1)" }}>
         <MenuTabs />
-        <Button onClick={toggleTheme} color={darkMode ? "green" : "red"}>
-          Theme Button
-        </Button>
       </Col>
     </ConfigProvider>
   );
