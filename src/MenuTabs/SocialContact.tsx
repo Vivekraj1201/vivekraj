@@ -1,7 +1,12 @@
-import { WhatsAppOutlined, InstagramOutlined, LinkedinFilled, GithubOutlined } from "@ant-design/icons";
-import { Col } from "antd";
+import { GithubOutlined, InstagramOutlined, LinkedinFilled, WhatsAppOutlined } from "@ant-design/icons";
+import MoonOutlined from "@ant-design/icons/lib/icons/MoonOutlined";
+import SunOutlined from "@ant-design/icons/lib/icons/SunOutlined";
+import { Col, Switch } from "antd";
+import { useTheme } from "../ThemeSelect/ThemeContext";
+
 
 const SocialContact = () => {
+    const { darkMode, toggleTheme } = useTheme();
     return (
         <Col
             style={{
@@ -26,6 +31,12 @@ const SocialContact = () => {
             <a href="https://github.com/vivekraj1201">
                 <GithubOutlined style={{ color: '#000000' }} />
             </a>
+            <Switch
+                checked={darkMode}
+                onChange={toggleTheme}
+                checkedChildren=<MoonOutlined />
+                unCheckedChildren=<SunOutlined />
+            />
         </Col>
     );
 }
