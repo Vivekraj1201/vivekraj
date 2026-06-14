@@ -29,7 +29,7 @@ const SocialContact = () => {
                 <LinkedinFilled style={{ color: '#2433fb' }} />
             </a>
             <a href="https://github.com/vivekraj1201">
-                <GithubOutlined style={{ color: '#000000' }} />
+                <GithubOutlined style={{ color: darkMode ? '#fff' : '#000' }} />
             </a>
             <Switch
                 checked={darkMode}

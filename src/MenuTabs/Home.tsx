@@ -1,11 +1,32 @@
 import { Button, Col, Row } from "antd";
+import { useTheme } from "../ThemeSelect/ThemeContext";
 const Home = () => {
+    const { darkMode } = useTheme();
     return <Col className="w-full h-screen flex items-center justify-center overflow-hidden">
         <Row className={'w-full'}>
             <Col className={'w-1/2 flex flex-col items-center justify-center'}>
-                <img src="/../src/assets/vivek.png" alt="Vivekraj" className="mb-4 h-3/5" />
+                {darkMode ? (
+                    <img
+                        src="/../src/assets/vivDark.png"
+                        alt="Vivekraj"
+                        className="mb-4 h-3/5"
+                    />
+                ) : <img
+                    src="/../src/assets/vivek.png"
+                    alt="Vivekraj"
+                    className="mb-4 h-3/5"
+                />}
             </Col>
             <Col className={'w-1/2 flex flex-col items-center justify-center'}>
+                <h1
+                    className="font-kingstone leading-none"
+                    style={{
+                        fontSize: "clamp(40px, 5vw, 80px)",
+                        color: darkMode ? "#fff" : "#000",
+                    }}
+                >
+                    Vivek V. Yadav
+                </h1>
                 <h1 className="text-8xl font-black">
                     <b>Turning Vision Into</b><br />
                     <b>Reality With Code</b><br />
@@ -21,6 +42,7 @@ const Home = () => {
                     <Button style={{ backgroundColor: "black", color: "white" }}>Resume</Button>
                     <Button className={'border-0'}>Contact Me</Button>
                 </Row>
+
             </Col>
         </Row >
     </Col >
