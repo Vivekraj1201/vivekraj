@@ -109,3 +109,22 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+@font-face {
+  font-family: "Ginga";
+  src: url("./assets/fonts/Ginga-r09p.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kingstone";
+  src: url("./assets/fonts/KingstoneDemoRegular-G3n5G.ttf")
+    format("truetype");
+}
+
+.font-ginga {
+  font-family: "Ginga";
+}
+
+.font-kingstone {
+  font-family: "Kingstone", cursive;
+}
