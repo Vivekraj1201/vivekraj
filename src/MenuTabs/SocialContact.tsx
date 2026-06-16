@@ -6,7 +6,7 @@ import {
     MoonOutlined,
     SunOutlined,
 } from "@ant-design/icons";
-import { Switch, Grid } from "antd";
+import { Switch, Grid, Row } from "antd";
 import { useTheme } from "../ThemeSelect/ThemeContext";
 
 const { useBreakpoint } = Grid;
@@ -18,7 +18,7 @@ const SocialContact = () => {
     const isMobile = !screens.md;
 
     return (
-        <div
+        <Row
             style={{
                 position: "absolute",
                 top: isMobile ? 8 : 12,
@@ -40,7 +40,6 @@ const SocialContact = () => {
             >
                 <WhatsAppOutlined style={{ color: "#0fc765" }} />
             </a>
-
             <a
                 href="https://instagram.com/vivekraj_1201"
                 target="_blank"
@@ -48,7 +47,6 @@ const SocialContact = () => {
             >
                 <InstagramOutlined style={{ color: "#E72D88" }} />
             </a>
-
             <a
                 href="https://linkedin.com/in/vivekraj1201"
                 target="_blank"
@@ -63,9 +61,7 @@ const SocialContact = () => {
                 rel="noopener noreferrer"
             >
                 <GithubOutlined
-                    style={{
-                        color: darkMode ? "#fff" : "#000",
-                    }}
+                    style={{ color: darkMode ? "#fff" : "#000" }}
                 />
             </a>
 
@@ -76,7 +72,7 @@ const SocialContact = () => {
                 unCheckedChildren={<SunOutlined />}
                 size={isMobile ? "small" : "default"}
             />
-        </div>
+        </Row>
     );
 };
 
