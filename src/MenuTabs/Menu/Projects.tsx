@@ -2,7 +2,7 @@ import { Card, Col } from 'antd'
 const Projects = () => {
 
     return (
-        <Col className="flex flex-col md:flex-row gap-6">
+        <Col className="flex flex-col sm:flex-row gap-6">
             <Card className="flex-1" style={{ backgroundColor: 'grey' }} >
                 Content
             </Card >
