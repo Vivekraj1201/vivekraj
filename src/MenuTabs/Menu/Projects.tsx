@@ -6,7 +6,7 @@ const Projects = () => {
             <Card className="flex-1" style={{ backgroundColor: 'grey' }} >
                 Content
             </Card >
-            <Card className="w-full lg:w-80" style={{ backgroundColor: 'purple' }}>
+            <Card className="w-full" style={{ backgroundColor: 'purple' }}>
                 Sidebar
             </Card>
         </Col>
