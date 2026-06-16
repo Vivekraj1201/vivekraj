@@ -9,7 +9,6 @@ const Home = () => {
     return (
         <Col className="w-full min-h-screen flex items-center justify-center overflow-hidden px-4">
             <Row gutter={[32, 32]} className="w-full">
-                {/* Image Section */}
                 <Col
                     xs={24}
                     md={12}
@@ -22,7 +21,6 @@ const Home = () => {
                     />
                 </Col>
 
-                {/* Content Section */}
                 <Col
                     xs={24}
                     md={12}
