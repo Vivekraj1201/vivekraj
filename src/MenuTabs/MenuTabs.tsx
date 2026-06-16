@@ -12,7 +12,7 @@ const MenuTabs = () => {
     ];
 
     return (
-        <Col style={{ position: "relative", paddingRight: "150px" }}>
+        <Col style={{ position: "relative" }}>
             <Tabs items={items} />
             <SocialContact />
         </Col>

@@ -11,7 +11,7 @@ const App = () => {
     <ConfigProvider
       theme={{ algorithm: darkMode ? darkAlgorithm : defaultAlgorithm }}
     >
-      <Col style={{ background: darkMode ? "rgba(0, 0, 0, 1)" : "rgba(255, 255, 255, 1)" }}>
+      <Col style={{ background: darkMode ? "rgba(0, 0, 0, 1)" : "rgba(255, 255, 255, 1)" }} className="m-4">
         <MenuTabs />
       </Col>
     </ConfigProvider>
