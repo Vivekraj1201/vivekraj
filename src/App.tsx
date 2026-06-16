@@ -1,4 +1,4 @@
-import { Button, Col, ConfigProvider, theme } from "antd";
+import { Col, ConfigProvider, theme } from "antd";
 import MenuTabs from "./MenuTabs/MenuTabs";
 import { useTheme } from "./ThemeSelect/ThemeContext";
 
