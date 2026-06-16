@@ -1,13 +1,13 @@
 import { Button, Col, Row } from "antd";
-import { useTheme } from "../ThemeSelect/ThemeContext";
-import vivDark from "../assets/vivDark.png";
-import vivek from "../assets/vivek.png";
+import { useTheme } from "../../ThemeSelect/ThemeContext";
+import vivDark from "../../assets/vivDark.png";
+import vivek from "../../assets/vivek.png";
 
 const Home = () => {
     const { darkMode } = useTheme();
 
     return (
-        <Col className="w-full min-h-screen flex items-center justify-center overflow-hidden px-4">
+        <Col className="w-full min-h-screen flex items-center justify-center overflow-hidden">
             <Row gutter={[32, 32]} className="w-full">
                 <Col
                     xs={24}
@@ -52,16 +52,10 @@ const Home = () => {
                     </p>
 
                     <Row className="w-full mt-4 px-4 md:px-0 gap-4 flex flex-col md:flex-row">
-                        <Button
-                            style={{
-                                backgroundColor: "black",
-                                color: "white",
-                            }}
-                        >
+                        <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}>
                             Resume
                         </Button>
-
-                        <Button className="border-0">
+                        <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}>
                             Contact Me
                         </Button>
                     </Row>
