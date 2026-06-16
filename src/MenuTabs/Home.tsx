@@ -5,50 +5,72 @@ import vivek from "../assets/vivek.png";
 
 const Home = () => {
     const { darkMode } = useTheme();
-    return <Col className="w-full h-screen flex items-center justify-center overflow-hidden">
-        <Row className={'w-full'}>
-            <Col className={'w-1/2 flex flex-col items-center justify-center'}>
-                {darkMode ? (
-                    <img
-                        src={vivDark}
-                        alt="Vivekraj"
-                        className="mb-4 h-3/5"
-                    />
-                ) : <img
-                    src={vivek}
-                    alt="Vivekraj"
-                    className="mb-4 h-3/5"
-                />}
-            </Col>
-            <Col className={'w-1/2 flex flex-col items-center justify-center'}>
-                <h1
-                    className="font-kingstone leading-none"
-                    style={{
-                        fontSize: "clamp(40px, 5vw, 80px)",
-                        color: darkMode ? "#fff" : "#000",
-                    }}
-                >
-                    Vivek V. Yadav
-                </h1>
-                <h1 className="text-8xl font-black">
-                    <b>Turning Vision Into</b><br />
-                    <b>Reality With Code</b><br />
-                    <b> And Design.</b>
-                </h1>
-                <p className="text-lg mt-4 font-mono text-justify px-10 font-bold">
-                    As a skilled Frontend React js developer, <br />
-                    I am dedicated to turning ideas
-                    into innovative web applications. Explore my lateset projects and articles,
-                    showcasing my expertise in React js and web development.
-                </p>
-                <Row className={"w-full mt-4 px-10 gap-4"}>
-                    <Button style={{ backgroundColor: "black", color: "white" }}>Resume</Button>
-                    <Button className={'border-0'}>Contact Me</Button>
-                </Row>
 
-            </Col>
-        </Row >
-    </Col >
-}
+    return (
+        <Col className="w-full min-h-screen flex items-center justify-center overflow-hidden px-4">
+            <Row gutter={[32, 32]} className="w-full">
+                {/* Image Section */}
+                <Col
+                    xs={24}
+                    md={12}
+                    className="flex flex-col items-center justify-center"
+                >
+                    <img
+                        src={darkMode ? vivDark : vivek}
+                        alt="Vivekraj"
+                        className="mb-4 w-3/4 md:w-full max-w-md h-auto"
+                    />
+                </Col>
+
+                {/* Content Section */}
+                <Col
+                    xs={24}
+                    md={12}
+                    className="flex flex-col items-center md:items-start justify-center"
+                >
+                    <h1
+                        className="font-kingstone leading-none text-center md:text-left"
+                        style={{
+                            fontSize: "clamp(40px, 5vw, 80px)",
+                            color: darkMode ? "#fff" : "#000",
+                        }}
+                    >
+                        Vivek V. Yadav
+                    </h1>
+
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-black text-center md:text-left">
+                        <b>Turning Vision Into</b>
+                        <br />
+                        <b>Reality With Code</b>
+                        <br />
+                        <b>And Design.</b>
+                    </h1>
+
+                    <p className="text-sm md:text-lg mt-4 font-mono text-center md:text-justify px-4 md:px-0 font-bold">
+                        As a skilled Frontend React.js developer,
+                        I am dedicated to turning ideas into innovative web
+                        applications. Explore my latest projects and articles,
+                        showcasing my expertise in React.js and web development.
+                    </p>
+
+                    <Row className="w-full mt-4 px-4 md:px-0 gap-4 flex flex-col md:flex-row">
+                        <Button
+                            style={{
+                                backgroundColor: "black",
+                                color: "white",
+                            }}
+                        >
+                            Resume
+                        </Button>
+
+                        <Button className="border-0">
+                            Contact Me
+                        </Button>
+                    </Row>
+                </Col>
+            </Row>
+        </Col>
+    );
+};
 
 export default Home;
