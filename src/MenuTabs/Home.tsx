@@ -1,5 +1,8 @@
 import { Button, Col, Row } from "antd";
 import { useTheme } from "../ThemeSelect/ThemeContext";
+import vivDark from "../assets/vivDark.png";
+import vivek from "../assets/vivek.png";
+
 const Home = () => {
     const { darkMode } = useTheme();
     return <Col className="w-full h-screen flex items-center justify-center overflow-hidden">
@@ -7,12 +10,12 @@ const Home = () => {
             <Col className={'w-1/2 flex flex-col items-center justify-center'}>
                 {darkMode ? (
                     <img
-                        src="/../src/assets/vivDark.png"
+                        src={vivDark}
                         alt="Vivekraj"
                         className="mb-4 h-3/5"
                     />
                 ) : <img
-                    src="/../src/assets/vivek.png"
+                    src={vivek}
                     alt="Vivekraj"
                     className="mb-4 h-3/5"
                 />}
