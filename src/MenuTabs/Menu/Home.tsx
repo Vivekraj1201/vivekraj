@@ -1,7 +1,6 @@
 import { Button, Col, Row } from "antd";
 import { useTheme } from "../../ThemeSelect/ThemeContext";
-import vivDark from "../../assets/vivDark.png";
-import vivek from "../../assets/vivek.png";
+import vivekTransp from "../../assets/vivekTransp.png";
 
 const Home = () => {
     const { darkMode } = useTheme();
@@ -15,7 +14,7 @@ const Home = () => {
                     className="flex flex-col items-center justify-center"
                 >
                     <img
-                        src={darkMode ? vivDark : vivek}
+                        src={vivekTransp}
                         alt="Vivekraj"
                         className="mb-4 w-3/4 md:w-full max-w-md h-auto"
                     />
