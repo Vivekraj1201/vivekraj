@@ -37,7 +37,7 @@ const SocialContact = () => {
             <>
                 {!screens.md ? (
                     <FloatButton.Group
-                        trigger="hover"
+                        trigger="click"
                         style={{ insetInlineEnd: 24 }}
                         icon={<CustomerServiceOutlined />}>
                         <FloatButton icon={<WhatsAppOutlined style={{ color: "#0fc765" }} />} />
