@@ -6,8 +6,9 @@ import {
     MoonOutlined,
     SunOutlined,
 } from "@ant-design/icons";
-import { Switch, Grid, Row } from "antd";
+import { Switch, Grid, Row, FloatButton } from "antd";
 import { useTheme } from "../ThemeSelect/ThemeContext";
+import { CustomerServiceOutlined } from '@ant-design/icons';
 
 const { useBreakpoint } = Grid;
 
@@ -33,38 +34,53 @@ const SocialContact = () => {
                 maxWidth: isMobile ? "90vw" : "auto",
             }}
         >
-            <a
-                href="https://wa.me/918308120194"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <WhatsAppOutlined style={{ color: "#0fc765" }} />
-            </a>
-            <a
-                href="https://instagram.com/vivekraj_1201"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <InstagramOutlined style={{ color: "#E72D88" }} />
-            </a>
-            <a
-                href="https://linkedin.com/in/vivekraj1201"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <LinkedinFilled style={{ color: "#2433fb" }} />
-            </a>
-
-            <a
-                href="https://github.com/vivekraj1201"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <GithubOutlined
-                    style={{ color: darkMode ? "#fff" : "#000" }}
-                />
-            </a>
-
+            <>
+                {!screens.md ? (
+                    <FloatButton.Group
+                        trigger="hover"
+                        style={{ insetInlineEnd: 24 }}
+                        icon={<CustomerServiceOutlined />}>
+                        <FloatButton icon={<WhatsAppOutlined style={{ color: "#0fc765" }} />} />
+                        <FloatButton icon={<InstagramOutlined />} style={{ color: "#E72D88" }} />
+                        <FloatButton icon={<LinkedinFilled />} style={{ color: "#E72D88" }} />
+                        <FloatButton icon={<GithubOutlined />} style={{ color: "#2433fb" }} />
+                    </FloatButton.Group>
+                ) : (
+                    <>
+                        <a
+                            href="https://wa.me/918308120194"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <WhatsAppOutlined style={{ color: "#0fc765" }} />
+                        </a>
+                        <a
+                            href="https://instagram.com/vivekraj_1201"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <InstagramOutlined style={{ color: "#E72D88" }} />
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/vivekraj1201"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <LinkedinFilled style={{ color: "#2433fb" }} />
+                        </a>
+                        <a
+                            href="https://github.com/vivekraj1201"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <GithubOutlined
+                                style={{ color: darkMode ? "#fff" : "#000" }}
+                            />
+                        </a>
+                    </>
+                )
+                }
+            </>
             <Switch
                 checked={darkMode}
                 onChange={toggleTheme}

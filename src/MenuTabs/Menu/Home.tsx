@@ -20,7 +20,6 @@ const Home = () => {
                         className="mb-4 w-3/4 md:w-full max-w-md h-auto"
                     />
                 </Col>
-
                 <Col
                     xs={24}
                     md={12}
