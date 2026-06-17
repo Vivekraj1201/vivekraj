@@ -26,7 +26,7 @@ const Home = () => {
                     className="flex flex-col items-center md:items-start justify-center"
                 >
                     <h1
-                        className="font-kingstone leading-none text-center md:text-left"
+                        className={`font-kingstone leading-none text-center md:text-left ${darkMode ? "text-white" : "text-black"}`}
                         style={{
                             fontSize: "clamp(40px, 5vw, 80px)",
                             color: darkMode ? "#fff" : "#000",
@@ -35,7 +35,7 @@ const Home = () => {
                         Vivek V. Yadav
                     </h1>
 
-                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-black text-center md:text-left">
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl text-center md:text-left" style={{ color: darkMode ? 'white' : "black" }}>
                         <b>Turning Vision Into</b>
                         <br />
                         <b>Reality With Code</b>
@@ -43,7 +43,7 @@ const Home = () => {
                         <b>And Design.</b>
                     </h1>
 
-                    <p className="text-sm md:text-lg mt-4 font-mono text-center md:text-justify px-4 md:px-0 font-bold">
+                    <p className="text-sm md:text-lg mt-4 font-mono text-center md:text-justify px-4 md:px-0 font-bold" style={{ color: darkMode ? 'white' : 'black' }}>
                         As a skilled Frontend React.js developer,
                         I am dedicated to turning ideas into innovative web
                         applications. Explore my latest projects and articles,
@@ -59,8 +59,8 @@ const Home = () => {
                         </Button>
                     </Row>
                 </Col>
-            </Row>
-        </Col>
+            </Row >
+        </Col >
     );
 };
 
