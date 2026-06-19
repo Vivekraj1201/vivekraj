@@ -33,7 +33,7 @@ const MenuTabs = () => {
                         style={{ marginBottom: 16 }}
                     ></Button>
                     <Drawer
-                        title="Menu"
+                        title=""
                         placement="left"
                         open={drawerOpen}
                         onClose={() => setDrawerOpen(false)}
