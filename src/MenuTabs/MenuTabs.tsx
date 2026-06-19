@@ -5,7 +5,8 @@ import { MenuOutlined } from "@ant-design/icons";
 import Home from "./Menu/Home";
 import Projects from "./Menu/Projects";
 import SocialContact from "./SocialContact";
-
+import About from "./Menu/About"
+import Contact from "./Menu/Contact"
 const { useBreakpoint } = Grid;
 
 const MenuTabs = () => {
@@ -16,8 +17,8 @@ const MenuTabs = () => {
     const items = [
         { key: "1", label: <b>Home</b>, children: <Home /> },
         { key: "2", label: <b>Projects</b>, children: <Projects /> },
-        { key: "3", label: <b>Contact</b>, children: <>Contact</> },
-        { key: "4", label: <b>About</b>, children: <>About</> },
+        { key: "3", label: <b>Contact</b>, children: <><Contact /></> },
+        { key: "4", label: <b>About</b>, children: <><About /></> },
     ];
 
     const activeContent = items.find((item) => item.key === activeKey)?.children;
@@ -30,9 +31,7 @@ const MenuTabs = () => {
                         icon={<MenuOutlined />}
                         onClick={() => setDrawerOpen(true)}
                         style={{ marginBottom: 16 }}
-                    >
-                        Menu
-                    </Button>
+                    ></Button>
                     <Drawer
                         title="Menu"
                         placement="left"

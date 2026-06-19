@@ -42,7 +42,7 @@ const SocialContact = () => {
                         icon={<CustomerServiceOutlined />}>
                         <FloatButton icon={<WhatsAppOutlined style={{ color: "#0fc765" }} />} />
                         <FloatButton icon={<InstagramOutlined />} style={{ color: "#E72D88" }} />
-                        <FloatButton icon={<LinkedinFilled />} style={{ color: "#E72D88" }} />
+                        <FloatButton icon={<LinkedinFilled />} style={{ color: "#2433fb" }} />
                         <FloatButton icon={<GithubOutlined />} style={{ color: darkMode ? "#fff" : "#000" }} />
                     </FloatButton.Group>
                 ) : (
