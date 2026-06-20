@@ -1,7 +1,8 @@
-import { Button, Col, Row } from "antd";
+import { Button, Col, Row, Typography } from "antd";
 import { useTheme } from "../../ThemeSelect/ThemeContext";
 import vivekTransp from "../../assets/vivekTransp.png";
 
+const { Text } = Typography;
 const Home = () => {
     const { darkMode } = useTheme();
 
@@ -56,6 +57,9 @@ const Home = () => {
                         <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}>
                             Contact Me
                         </Button>
+                    </Row>
+                    <Row className="flex mt-6">
+                        <h2 style={{ color: 'red', fontWeight: '700' }}>Note : This site is still under coding !</h2>
                     </Row>
                 </Col>
             </Row >
