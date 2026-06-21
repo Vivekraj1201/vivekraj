@@ -1,7 +1,6 @@
-import { Col, ConfigProvider, theme } from "antd";
-import MenuTabs from "./MenuTabs/MenuTabs";
+import { ConfigProvider, theme, Col } from "antd";
 import { useTheme } from "./ThemeSelect/ThemeContext";
-
+import NavigationRoute from "./Navigation/NavigationRoute";
 const { darkAlgorithm, defaultAlgorithm } = theme;
 
 const App = () => {
@@ -12,7 +11,7 @@ const App = () => {
       theme={{ algorithm: darkMode ? darkAlgorithm : defaultAlgorithm }}
     >
       <Col style={{ background: darkMode ? "black" : "white" }}>
-        <MenuTabs />
+        <NavigationRoute />
       </Col>
     </ConfigProvider>
   );
