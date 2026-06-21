@@ -1,8 +1,8 @@
 import { Button, Col, Row, Typography } from "antd";
 import { useTheme } from "../../ThemeSelect/ThemeContext";
 import vivekTransp from "../../assets/vivekTransp.png";
+import VivekYadavResume from "../../Files/VivekYadavResume.pdf"
 
-const { Text } = Typography;
 const Home = () => {
     const { darkMode } = useTheme();
 
@@ -49,11 +49,16 @@ const Home = () => {
                         applications. Explore my latest projects and articles,
                         showcasing my expertise in React.js and web development.
                     </p>
-
                     <Row className="w-full mt-4 px-4 md:px-0 gap-4 flex flex-col md:flex-row">
-                        <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}>
-                            Resume
-                        </Button>
+                        <a
+                            href={VivekYadavResume}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}>
+                                Resume
+                            </Button>
+                        </a>
                         <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}>
                             Contact Me
                         </Button>
