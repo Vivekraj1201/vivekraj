@@ -1,4 +1,4 @@
-import { Button, Col, Row, Typography } from "antd";
+import { Button, Col, Row } from "antd";
 import { useTheme } from "../../ThemeSelect/ThemeContext";
 import vivekTransp from "../../assets/vivekTransp.png";
 import VivekYadavResume from "../../Files/VivekYadavResume.pdf"
