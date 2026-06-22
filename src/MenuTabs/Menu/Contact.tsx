@@ -23,7 +23,7 @@ const Contact = () => {
                         <Row className="w-full flex flex-row gap-12">
                             <Col><WechatOutlined style={{ fontSize: '60px', color: 'black' }} /></Col>
                             <Col>
-                                <Row><h2 style={{ color: 'black' }}>Our Friendly team is there to</h2></Row>
+                                <Row><h2 style={{ color: 'black' }}>Mail us</h2></Row>
                                 <Row><Text style={{ color: 'black' }}>vivekyadav7875.vy@gmail.com</Text></Row>
                             </Col>
                         </Row>
@@ -32,7 +32,7 @@ const Contact = () => {
                             <Col><UserSwitchOutlined style={{ fontSize: '60px', color: 'black' }} /></Col>
                             <Col>
                                 <Row><h2 style={{ color: 'black' }}>Visit us</h2></Row>
-                                <Row><Text style={{ color: 'black' }}>Juna Budhwar Peth, Kolhapur - 416002</Text>
+                                <Row><Text style={{ color: 'black' }}>2873, Juna Budhwar Peth, Kolhapur - 416002</Text>
                                 </Row>
                             </Col>
                         </Row>
@@ -40,7 +40,7 @@ const Contact = () => {
                             <Col><PhoneOutlined style={{ fontSize: '60px', color: 'black' }} /></Col>
                             <Col>
                                 <Row><h2 style={{ color: 'black' }}>Call us</h2></Row>
-                                <Row><Text style={{ color: 'black' }}>vivekyadav7875.vy@gmail.com</Text></Row>
+                                <Row><Text style={{ color: 'black' }}>+91 8308120194 <br />+91 7875692994</Text></Row>
                             </Col>
                         </Row>
                     </Col>
