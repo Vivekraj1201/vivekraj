@@ -40,10 +40,18 @@ const SocialContact = () => {
                         trigger="click"
                         style={{ insetInlineEnd: 24 }}
                         icon={<CustomerServiceOutlined />}>
-                        <FloatButton icon={<WhatsAppOutlined style={{ color: "#0fc765" }} />} />
-                        <FloatButton icon={<InstagramOutlined />} style={{ color: "#E72D88" }} />
-                        <FloatButton icon={<LinkedinFilled />} style={{ color: "#2433fb" }} />
-                        <FloatButton icon={<GithubOutlined />} style={{ color: darkMode ? "#fff" : "#000" }} />
+                        <FloatButton icon={<WhatsAppOutlined style={{ color: "#0fc765" }} />}
+                            onClick={() => window.open("https://wa.me/918308120194", "_blank")}
+                        />
+                        <FloatButton icon={<InstagramOutlined />} style={{ color: "#E72D88" }}
+                            onClick={() => window.open("https://instagram.com/vivekraj_1201", "_blank")}
+                        />
+                        <FloatButton icon={<LinkedinFilled />} style={{ color: "#2433fb" }}
+                            onClick={() => window.open("https://linkedin.com/in/vivekraj1201", "_blank")}
+                        />
+                        <FloatButton icon={<GithubOutlined />} style={{ color: darkMode ? "#fff" : "#000" }}
+                            onClick={() => window.open("https://github.com/vivekraj1201", "_blank")}
+                        />
                     </FloatButton.Group>
                 ) : (
                     <>
