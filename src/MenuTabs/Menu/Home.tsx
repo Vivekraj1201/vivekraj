@@ -1,11 +1,16 @@
 import { Button, Col, Row } from "antd";
 import { useTheme } from "../../ThemeSelect/ThemeContext";
 import vivekTransp from "../../assets/vivekTransp.png";
+import { useNavigate } from "react-router-dom";
 import VivekYadavResume from "../../Files/VivekYadavResume.pdf"
 
 const Home = () => {
     const { darkMode } = useTheme();
+    const navigate = useNavigate();
 
+    const handleClick = () => {
+        navigate("/contact")
+    }
     return (
         <Col className="w-full min-h-screen flex items-center justify-center overflow-hidden">
             <Row gutter={[32, 32]} className="w-full">
@@ -59,7 +64,9 @@ const Home = () => {
                                 Resume
                             </Button>
                         </a>
-                        <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}>
+                        <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}
+                            onClick={handleClick}
+                        >
                             Contact Me
                         </Button>
                     </Row>
