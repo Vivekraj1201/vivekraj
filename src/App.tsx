@@ -10,7 +10,12 @@ const App = () => {
     <ConfigProvider
       theme={{ algorithm: darkMode ? darkAlgorithm : defaultAlgorithm }}
     >
-      <Col style={{ background: darkMode ? "black" : "white" }}>
+      <Col
+        style={{
+          minHeight: "100svh",
+          background: darkMode ? "black" : "white",
+        }}
+      >
         <NavigationRoute />
       </Col>
     </ConfigProvider>

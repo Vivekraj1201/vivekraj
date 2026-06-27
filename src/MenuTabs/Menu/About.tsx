@@ -10,7 +10,7 @@ const About = () => {
             <img
                 src={vivAboutTranss}
                 alt="Sticker"
-                className="w-72 h-auto object-contain"
+                className="w-72 h-auto object-contain transition-transform duration-800 ease-out hover:scale-110"
             />
         </Col>
     );

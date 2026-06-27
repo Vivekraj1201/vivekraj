@@ -22,7 +22,7 @@ const Home = () => {
                     <img
                         src={vivekTransp}
                         alt="Vivekraj"
-                        className="mb-4 w-3/4 md:w-full max-w-md h-auto"
+                        className="mb-4 w-3/4 md:w-full max-w-md h-auto transition-transform duration-800 ease-out hover:scale-105"
                     />
                 </Col>
                 <Col
