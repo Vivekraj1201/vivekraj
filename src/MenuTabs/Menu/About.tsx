@@ -1,9 +1,9 @@
 import vivAboutTranss from "../../assets/vivAboutTranss.png";
-import { Row, Col, Typography, Space } from "antd";
+import { Row, Col, Typography } from "antd";
 import { useTheme } from "../../ThemeSelect/ThemeContext";
 import SkillSet from "../../MenuTabs/Menu/SkillSet";
 
-const { Paragraph, Text } = Typography;
+const { Paragraph } = Typography;
 
 const About = () => {
     const { darkMode } = useTheme();
@@ -27,7 +27,7 @@ const About = () => {
                     <img
                         src={vivAboutTranss}
                         alt="Vivek Raj"
-                        className=" w-full max-w-[550px] h-[90vh] object-contain transition-transform  duration-500 hover:scale-105"
+                        className=" w-full h-[90vh] object-contain transition-transform  duration-500 hover:scale-105"
                     />
                 </Col>
 
