@@ -1,14 +1,15 @@
 import vivAboutTranss from "../../assets/vivAboutTranss.png";
-import { Row, Col, Typography } from "antd";
+import { Row, Col, Typography, Space } from "antd";
 import { useTheme } from "../../ThemeSelect/ThemeContext";
+import SkillSet from "../../MenuTabs/Menu/SkillSet";
 
-const { Paragraph } = Typography;
+const { Paragraph, Text } = Typography;
 
 const About = () => {
     const { darkMode } = useTheme();
 
     return (
-        <div
+        <Row
             className="min-h-screen flex items-center px-5 py-10"
             style={{
                 background: darkMode ? "#000" : "linear-gradient(135deg, #dbeafe, #f8fafc)",
@@ -30,9 +31,8 @@ const About = () => {
                     />
                 </Col>
 
-                {/* About Text */}
                 <Col xs={24} sm={24} md={14} lg={14} xl={14} >
-                    <div
+                    <Row
                         className="rounded-3xl p-8 backdrop-blur-xl border shadow-2xl"
                         style={{
                             background: darkMode ? "rgba(255,255,255,0.08)" : "rgba(255,255,255,0.25)", border: "1px solid rgba(255,255,255,0.25)",
@@ -89,10 +89,11 @@ const About = () => {
                             is to create elegant, scalable applications that provide
                             exceptional user experiences.
                         </Paragraph>
-                    </div>
+                    </Row>
+                    <SkillSet />
                 </Col>
             </Row>
-        </div>
+        </Row>
     );
 };
 
