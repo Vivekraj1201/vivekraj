@@ -19,8 +19,8 @@ import mongodb from "../../assets/icons/mongodb.png";
 import chatgpt from "../../assets/icons/chatgpt.png";
 import perplexity from "../../assets/icons/perplexity.png";
 import gemini from "../../assets/icons/gemini.png";
-import claude from "../../assets/icons/claude.png"
-import debugging from "../../assets/icons/debugging.png"
+import claude from "../../assets/icons/claude.png";
+import debugging from "../../assets/icons/debugging.png";
 
 const { Text } = Typography;
 const SkillStyle = "border-2 border-amber-500 rounded-full px-4 py-2 shadow-lg duration-300 hover:scale-105";
