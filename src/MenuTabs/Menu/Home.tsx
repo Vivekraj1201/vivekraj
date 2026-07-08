@@ -61,9 +61,23 @@ const Home = () => {
                             rel="noopener noreferrer"
                         >
                             <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}>
-                                Resume
+                                View Resume
                             </Button>
                         </a>
+                        <a
+                            href={VivekYadavResume}
+                            download="Vivek_Yadav_Resume.pdf"
+                        >
+                            <Button
+                                style={{
+                                    backgroundColor: darkMode ? "white" : "black",
+                                    color: darkMode ? "black" : "white",
+                                }}
+                            >
+                                Download Resume
+                            </Button>
+                        </a>
+
                         <Button style={{ backgroundColor: darkMode ? "white" : "black", color: darkMode ? "black" : "white" }}
                             onClick={handleClick}
                         >

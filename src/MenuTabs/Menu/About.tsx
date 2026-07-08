@@ -17,7 +17,6 @@ const About = () => {
         >
             <Row
                 gutter={[40, 40]}
-                align="middle"
                 className="w-full"
             >
                 <Col

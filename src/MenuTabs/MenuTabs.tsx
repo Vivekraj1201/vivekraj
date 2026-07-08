@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Col, Tabs, Drawer, Button, Menu, Grid } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
-
 import Home from "./Menu/Home";
 import Projects from "./Menu/Projects";
 import SocialContact from "./SocialContact";
 import About from "./Menu/About"
-import Contact from "./Menu/Contact"
+import Contact from "./Menu/Contact";
+
 const { useBreakpoint } = Grid;
 
 const MenuTabs = () => {
